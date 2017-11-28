@@ -189,6 +189,10 @@ setup(name='HTSeq',
          'HTSeq.scripts.qa',
          'HTSeq.scripts.count'
       ],
+      entry_points={
+        'console_scripts': ['htseq-count=HTSeq.scripts.count:main',
+                            'htseq-qa=HTSeq.scripts.qa:main']
+        },
       scripts=[
          'scripts/htseq-qa',
          'scripts/htseq-count',
